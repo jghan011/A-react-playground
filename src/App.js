@@ -3,7 +3,7 @@ import Split from './composition/Split';
 import './App.css';
 // import Tooltip from './composition/Tooltip'
 import Messages from './composition/Messages';
-
+import TheDate from './state/TheDate.js'
 
 // const firstTooltip = (
 //   <Tooltip color="hotpink" message= 'tooltip message'>
@@ -47,6 +47,7 @@ class App extends Component {
         <h1>YOUR APPLICATION NAME !</h1>
         <Messages name='Messages' unread={0}/>
         <Messages name='Notifications' unread={10}/>
+        <TheDate />
       </div>  
 
     );
