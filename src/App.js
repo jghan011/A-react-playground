@@ -4,7 +4,7 @@ import './App.css';
 // import Tooltip from './composition/Tooltip'
 import Messages from './composition/Messages';
 import TheDate from './state/TheDate.js';
-import Counter from './state/Counter.js';
+import Counter from './Counter/Counter';
 
 // const firstTooltip = (
 //   <Tooltip color="hotpink" message= 'tooltip message'>
