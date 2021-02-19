@@ -33,4 +33,4 @@ class HelloWorld extends Component{
 }
 
 
-export default HelloWorld
+export default HelloWorld;
