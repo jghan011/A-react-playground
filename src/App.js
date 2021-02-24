@@ -7,6 +7,7 @@ import TheDate from './state/TheDate.js';
 import Counter from './Counter/Counter';
 import HelloWorld from './state-drills/HelloWorld'
  import Bomb from './state-drills/Bomb'
+ import Roulette from './state-drills/RouletteGun'
 
 // const firstTooltip = (
 //   <Tooltip color="hotpink" message= 'tooltip message'>
@@ -54,6 +55,7 @@ class App extends Component {
         <Counter count={123}/>
         <HelloWorld />
         <Bomb/> 
+        <Roulette />
       </div>  
     );
   }
