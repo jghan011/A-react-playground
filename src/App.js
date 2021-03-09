@@ -5,9 +5,11 @@ import './App.css';
 import Messages from './composition/Messages';
 import TheDate from './state/TheDate.js';
 import Counter from './Counter/Counter';
-import HelloWorld from './state-drills/HelloWorld'
- import Bomb from './state-drills/Bomb'
- import Roulette from './state-drills/RouletteGun'
+import HelloWorld from './state-drills/HelloWorld';
+import Bomb from './state-drills/Bomb';
+import Roulette from './state-drills/RouletteGun';
+import Tabs from './state/Tabs/Tabs';
+
 
 // const firstTooltip = (
 //   <Tooltip color="hotpink" message= 'tooltip message'>
@@ -44,6 +46,15 @@ import HelloWorld from './state-drills/HelloWorld'
 //   );
 // }
 
+const tabsProp = [
+  { name: 'First tab',
+    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam exercitationem quos consectetur expedita consequatur. Fugit, sapiente aspernatur corporis velit, dolor eum reprehenderit provident ipsam, maiores incidunt repellat! Facilis, neque doloremque.' },
+  { name: 'Second tab',
+    content: 'Laboriosam exercitationem quos consectetur expedita consequatur. Fugit, sapiente aspernatur corporis velit, dolor eum reprehenderit provident ipsam, maiores incidunt repellat! Facilis, neque doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit.' },
+  { name: 'Third tab',
+    content: 'Fugit, sapiente aspernatur corporis velit, dolor eum reprehenderit provident ipsam, maiores incidunt repellat! Facilis, neque doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam exercitationem quos consectetur expedita consequatur.' },
+];
+
 class App extends Component {
   render() {
     return (
@@ -56,6 +67,7 @@ class App extends Component {
         <HelloWorld />
         <Bomb/> 
         <Roulette />
+        <Tabs tabs={tabsProp} />
       </div>  
     );
   }
