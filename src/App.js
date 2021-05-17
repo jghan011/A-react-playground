@@ -9,6 +9,7 @@ import HelloWorld from './state-drills/HelloWorld';
 import Bomb from './state-drills/Bomb';
 import Roulette from './state-drills/RouletteGun';
 import Tabs from './state/Tabs/Tabs';
+import AppOne from './ShoppingTing/AppOne';
 
 
 // const firstTooltip = (
@@ -68,6 +69,7 @@ class App extends Component {
         <Bomb/> 
         <Roulette />
         <Tabs tabs={tabsProp} />
+        <AppOne/>
       </div>  
     );
   }
