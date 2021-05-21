@@ -1,6 +1,10 @@
 import React from 'react';
 
 export default function ShoppingItem(props) {
+  ShoppingItem.defaultProps = {
+    item: {}
+  }
+ 
   return (
     <li>
       <h2 style={{
@@ -8,13 +12,19 @@ export default function ShoppingItem(props) {
       }}>
         {props.item.name}
       </h2>
-      <button type='button'>check</button>
-      <button type='button'>delete</button>
+      <button
+        onClick={props.onCheckItem}
+        type='button'>
+        check
+      </button>
+      <button
+        onClick={props.onDeleteItem}
+        type='button'>
+        delete
+      </button>
     </li>
   )
 }
 
-ShoppingItem.defaultProps = {
-  item: {}
-}
+
 

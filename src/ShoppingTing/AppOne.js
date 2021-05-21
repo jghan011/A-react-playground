@@ -11,10 +11,16 @@ class AppOne extends React.Component {
      ]
 
     };
+    handleDeleteItem(){
+      console.log('handle delete item called')
+    }
+    handleCheckItem(){
+      console.log('handle check item called')
+    }
     render() {
         return(
-            <>
-            <header>
+          <>
+          <header>
             <h1>Shopping List</h1>
           </header>
           <main>
@@ -22,10 +28,14 @@ class AppOne extends React.Component {
               <AddItemForm />
             </section>
             <section>
-              <ShoppingList items={this.state.shoppingItems} />
+              <ShoppingList
+                items={this.state.shoppingItems}
+                onDeleteItem={this.handleDeleteItem}
+                onCheckItem={this.handleCheckItem}
+              />
             </section>
           </main>
-          </>
+        </>
 
         )
 
