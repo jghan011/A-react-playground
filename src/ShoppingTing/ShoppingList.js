@@ -3,8 +3,8 @@ import React from 'react';
 import ShoppingItem from './ShoppingItem';
 
 export default function ShoppingList(props) {
-  ShoppingList.defaultProps = {
-    items: []
+  ShoppingItem.defaultProps = {
+    item: {}
   }
       return (
         
